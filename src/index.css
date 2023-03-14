@@ -1,0 +1,485 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #252525;
+  text-align: center;
+  /* padding-top: 150px; */
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/* navbar */
+.nav {
+  border: 1px solid green;
+  margin-bottom: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 1px #eee;
+  z-index: 1;
+}
+
+.nav .nav-content {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.nav .left ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav .left li:first-child {
+  padding-left: 0;
+}
+
+.nav-content .right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-content .right .avatar {
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.nav-content .right .log-btn {
+  border: none;
+  cursor: pointer;
+  padding: 0 15px;
+  margin: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* login page */
+.poll-image {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 10px auto;
+}
+
+.login-form {
+  margin: 20px auto;
+}
+
+.login-input {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 10px;
+  width: 80%;
+  border: 1px solid #eee;
+}
+
+.login-input::placeholder {
+  color: #999;
+}
+
+.login-btn {
+  cursor: pointer;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.29);
+  padding: 10px 25px;
+  position: relative;
+  /* left: 45%; */
+  /* width: 150px; */
+  font-size: 16px;
+  color: #333;
+  border-radius: 5px;
+}
+
+.notes {
+  text-align: left;
+  margin-left: 150px;
+  letter-spacing: 1px;
+}
+
+/* dashboard page */
+.dashboard-page {
+  margin-top: 100px;
+  border: 1px solid transparent;
+}
+
+/* .dashboard-container {
+  width: 80%;
+  position: relative;
+  margin: 25px auto;
+  padding: 5px;
+  border: 2px solid rgb(58, 205, 58);
+  border-radius: 10px;
+} */
+
+.btn-box {
+  width: 45%;
+  margin: 30px auto;
+  position: relative;
+  box-shadow: 0 0 6px -2px gray;
+  border-radius: 30px;
+}
+
+.toggle-btn {
+  width: 50%;
+  padding: 10px 0;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  position: relative;
+  background-color: transparent;
+}
+
+.toggle-btn.clicked {
+  background-color: rgb(58, 205, 58);
+  border-radius: 30px;
+  color: white;
+}
+
+.poll-list {
+  border: 1px solid #ddd;
+  margin: 20px auto 50px;
+  width: 95%;
+}
+
+.poll-list .poll-header {
+  padding: 10px 0 25px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.poll-list ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.poll-list ul li {
+  width: 300px;
+  margin: 10px 30px;
+}
+
+/* pollCard page */
+.tweet {
+  width: 100%;
+  max-width: 590px;
+  /* padding: 10px; */
+  /* display: flex; */
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tInfo {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet .timestamp {
+  color: #999;
+  margin-top: -10px;
+}
+
+.tweet .show {
+  width: 90%;
+  padding: 10px 0;
+  display: inline-block;
+  margin: 5px auto 10px;
+  border: 1px solid rgb(58, 205, 58);
+  border-radius: 5px;
+  color: rgb(65, 191, 65);
+}
+
+/* ?? */
+.tweet hr {
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* .btn {
+  text-transform: uppercase;
+  margin: 35px auto;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.29);
+  cursor: pointer;
+  background: #fff;
+  font-size: 16px;
+  width: 250px;
+  position: relative;
+} */
+
+.btn:hover {
+  border-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: 0;
+  font-weight: 700;
+  border-width: 2px;
+}
+
+/* Hacky but less typing in the video */
+.tweet-info > div > span:first-child {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.tweet-info > div > span:nth-child(2) {
+  color: #969696;
+  font-size: 16px;
+}
+
+.tweet-info > div > div {
+  color: #969696;
+  font-size: 15px;
+}
+
+.tweet-info > div > p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.tweet-icons {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-icons > span {
+  color: #969696;
+  margin: 0 15px 0 5px;
+  font-size: 18px !important;
+}
+
+.tweet-icon {
+  font-size: 27px;
+  color: #697784;
+}
+
+.tweet-icon:hover {
+  color: #00b5d6;
+  cursor: pointer;
+}
+
+.replying-to {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  color: #969696;
+  cursor: pointer;
+}
+
+.new-tweet {
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  border-radius: 4px;
+  border: 1px solid #dad7d7;
+  padding: 10px;
+  font-size: 15px;
+  height: 100px;
+}
+
+.tweet-length {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #c3392a;
+}
+
+/* pollPage */
+.poll-page {
+  padding-top: 150px;
+}
+
+.poll-page h2 {
+  margin-bottom: 30px;
+}
+
+.poll-page img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.poll-page h3 {
+  margin-bottom: 30px;
+  word-spacing: 2px;
+}
+
+.poll-page .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.poll-page .info-element {
+  border: 1px solid #333;
+  width: 48%;
+}
+
+.poll-page .info-element .sector {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.poll-page .info-element .percentage .votes {
+  color: #333;
+  margin-right: 10px;
+}
+
+.poll-page .info-element .percentage .votes {
+  color: #999;
+  margin-right: 10px;
+}
+
+.poll-page .info-element .percentage {
+  color: #333;
+}
+
+.poll-page .info-element button {
+  padding: 10px 0;
+  background-color: rgb(71, 204, 168);
+  color: #fff;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.answeredOption {
+  background-color: rgb(244, 233, 219);
+  border: 1px solid rgb(244, 233, 219);
+}
+
+/* leaderboard */
+.leaderboard {
+  padding-top: 150px;
+}
+
+.leaderboard table {
+  width: 100%;
+  text-align: left;
+}
+
+.leaderboard table thead {
+  height: 60px;
+  background-color: #eee;
+}
+
+.leaderboard table,
+th,
+td {
+  padding-left: 20px;
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+
+.leaderboard table .table-user {
+  width: 40%;
+  padding: 10px 0 20px;
+  padding-left: 20px;
+}
+
+.leaderboard .user-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.table-userName {
+  display: inline-block;
+  margin-left: 20px;
+  position: absolute;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.table-userId {
+  display: inline-block;
+  margin-left: 20px;
+  position: absolute;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #999;
+}
+
+/* newPoll page */
+.new-poll {
+  padding-top: 150px;
+}
+
+.new-poll h2 {
+  margin: 20px auto -10px;
+}
+
+.new-poll h4 {
+  color: rgb(123, 123, 123);
+  margin-bottom: 40px;
+}
+
+.new-poll h5 {
+  margin-bottom: 7px;
+}
+
+.new-poll input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.new-poll button {
+  border: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+
+/* notFound page */
+.notfound-page {
+  padding-top: 150px;
+}
